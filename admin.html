@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Sigareti | Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" data-company-name>Alex Sigareti</a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О компании</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contacts.html">Контакты</a>
+      <a class="active" href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="page admin-page">
+    <section class="admin-login" id="loginBox">
+      <div class="section-title">
+        <p class="eyebrow">Admin</p>
+        <h1>Вход</h1>
+      </div>
+      <form class="admin-form" id="loginForm">
+        <label>
+          Login
+          <input type="text" id="login" autocomplete="username" required>
+        </label>
+        <label>
+          Password
+          <input type="password" id="password" autocomplete="current-password" required>
+        </label>
+        <button class="btn primary" type="submit">Войти</button>
+        <p class="form-note">Демо доступ: <strong>admin</strong> / <strong>1234</strong></p>
+      </form>
+    </section>
+
+    <section class="admin-dashboard hidden" id="adminBox">
+      <div class="admin-top">
+        <div>
+          <p class="eyebrow">Панель управления</p>
+          <h1>Редактирование сайта</h1>
+        </div>
+        <button class="btn secondary" id="logoutBtn" type="button">Выйти</button>
+      </div>
+
+      <form class="admin-form" id="settingsForm">
+        <h2>Основная информация</h2>
+        <label>
+          Название компании
+          <input type="text" id="companyName" required>
+        </label>
+        <label>
+          Текст на главной
+          <textarea id="homeText" rows="5" required></textarea>
+        </label>
+
+        <h2>Контакты</h2>
+        <label>
+          Телефон
+          <input type="text" id="phone" required>
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" required>
+        </label>
+        <label>
+          Адрес
+          <input type="text" id="address" required>
+        </label>
+        <button class="btn primary" type="submit">Сохранить настройки</button>
+      </form>
+
+      <form class="admin-form" id="productForm">
+        <h2 id="productFormTitle">Добавить товар</h2>
+        <input type="hidden" id="productId">
+        <label>
+          Название товара
+          <input type="text" id="productName" required>
+        </label>
+        <label>
+          Описание
+          <textarea id="productDescription" rows="3" required></textarea>
+        </label>
+        <label>
+          Цена
+          <input type="text" id="productPrice" required>
+        </label>
+        <label>
+          Фото URL
+          <input type="url" id="productImage" required>
+        </label>
+        <div class="button-row">
+          <button class="btn primary" type="submit">Сохранить товар</button>
+          <button class="btn secondary" id="cancelEditBtn" type="button">Очистить</button>
+        </div>
+      </form>
+
+      <div class="admin-list" id="adminProductList"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
