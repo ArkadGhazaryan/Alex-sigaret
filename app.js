@@ -1,8 +1,8 @@
-const STORAGE_KEY = "alex_sigareti_site_data";
+const STORAGE_KEY = "alex_sigareti_site_data_v2";
 
 const defaultData = {
   companyName: "Alex Sigareti",
-  homeText: "Современная компания с аккуратным каталогом, галереей и контактами. Все данные можно менять в админке без сервера.",
+  homeText: "Темный, стильный и атмосферный smoke website: каталог, галерея, контакты и админка без backend. Все работает прямо из браузера.",
   contacts: {
     phone: "+374 00 000 000",
     email: "info@alexsigareti.com",
@@ -11,24 +11,31 @@ const defaultData = {
   products: [
     {
       id: "p1",
-      name: "Classic Gold",
-      description: "Аккуратная позиция каталога в корпоративном стиле.",
-      price: "AMD 1 200",
-      image: "https://images.unsplash.com/photo-1520975682031-a6454f4f67d5?auto=format&fit=crop&w=900&q=80"
+      name: "Midnight Gold",
+      description: "Темная premium позиция с золотым настроением и сильной визуальной подачей.",
+      price: "AMD 1 800",
+      image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=900&q=80"
     },
     {
       id: "p2",
-      name: "Black Edition",
-      description: "Темный минималистичный товарный блок.",
-      price: "AMD 1 500",
-      image: "https://images.unsplash.com/photo-1515138692129-197a2c608cfd?auto=format&fit=crop&w=900&q=80"
+      name: "Smoke Black",
+      description: "Строгий черный стиль, дымная атмосфера и clean карточка товара.",
+      price: "AMD 2 100",
+      image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
     },
     {
       id: "p3",
-      name: "White Label",
-      description: "Светлый вариант для демонстрации каталога.",
-      price: "AMD 1 350",
-      image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=900&q=80"
+      name: "Ash White",
+      description: "Контрастная светлая позиция для баланса черного, белого и золотого.",
+      price: "AMD 1 950",
+      image: "https://images.unsplash.com/photo-1517315003714-a071486bd9ea?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      id: "p4",
+      name: "Ember Line",
+      description: "Теплый акцент, как тлеющий огонь внутри темного визуального мира.",
+      price: "AMD 2 400",
+      image: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80"
     }
   ]
 };

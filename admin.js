@@ -66,8 +66,8 @@ function renderAdminProducts() {
           <strong>${escapeHTML(product.price)}</strong>
         </div>
         <div class="item-actions">
-          <button class="btn primary" type="button" data-edit="${product.id}">Edit</button>
-          <button class="btn secondary" type="button" data-delete="${product.id}">Delete</button>
+          <button class="btn primary" type="button" data-edit="${escapeHTML(product.id)}">Edit</button>
+          <button class="btn secondary" type="button" data-delete="${escapeHTML(product.id)}">Delete</button>
         </div>
       </article>
     `)
